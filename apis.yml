@@ -1,7 +1,25 @@
 aid: gravy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gravy.png
 name: Gravy
-description: Gravy is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Gravy is a local-first, AI-powered personal finance workspace that runs on the Mac. It connects
+  every bank, credit card, and investment account, automatically categorizes every transaction, and
+  lets people ask plain-language questions about their money while keeping the data on their own
+  device for privacy. Gravy focuses on optimizing spending, surfacing savings, tracking investments
+  and recurring subscriptions, and automating tedious money tasks for both individuals and small
+  businesses. It is a Y Combinator (Spring 2026) company. Gravy is a consumer application and, as of
+  this profile, publishes no public developer API, documentation, or SDK surface.
 url: https://raw.githubusercontent.com/api-evangelist/gravy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +29,37 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Personal Finance
+- Fintech
+- AI
+- Consumer
+- Local-First
+- Mac
+- Financial Management
 apis: []
+common:
+- type: DomainSecurity
+  url: security/gravy-domain-security.yml
+- type: Website
+  url: https://gravy.finance
+- type: Business
+  url: https://gravy.finance/business
+- type: Download
+  url: https://gravy.finance/download
+- type: PrivacyPolicy
+  url: https://gravy.finance/privacy
+- type: TermsOfService
+  url: https://gravy.finance/terms
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
